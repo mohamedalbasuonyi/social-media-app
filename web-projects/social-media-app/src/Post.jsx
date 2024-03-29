@@ -7,7 +7,9 @@ return(
 <p>This is a test post we'll edit later!</p>
 <p>Likes: 30</p>
 <p>Comments:</p>
-<Comment />
+<Comment content="This is a test comment" />
+<Comment content="This is a after test comment"/>
+<Comment content="This is a yet test comment"/>
 </div>
 )
 }
