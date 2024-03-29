@@ -1,35 +1,12 @@
-import React, { useState } from 'react';
-
-function Comment() {
-  const [comment, setComment] = useState('');
-
-  const handleInputChange = (event) => {
-    setComment(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Logic to handle submitting the comment
-    console.log('Comment submitted:', comment);
-    setComment(''); // Clear the input field after submitting
-  };
-
-  return (
-    <div>
-      <h4>Leave a Comment</h4>
-      <form onSubmit={handleSubmit}>
-        <textarea
-          value={comment}
-          onChange={handleInputChange}
-          placeholder="Write your comment here..."
-          rows="4"
-          cols="50"
-        />
-        <br />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  );
+import React from 'react';
+function Post(){
+return(
+<div>
+<h3>Test Post</h3>
+<p>This is a test post we'll edit later!</p>
+<p>Likes: 30</p>
+<p>Comments:</p>
+</div>
+)
 }
-
-export default Comment;
+export default Post
