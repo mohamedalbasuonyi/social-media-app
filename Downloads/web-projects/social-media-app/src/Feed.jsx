@@ -5,7 +5,7 @@ function Feed({ posts }) {
   return (
     <div>
       {posts.map((post) => (
-        <Post key={post.id} content={post.content} />
+        <Post key={post.id} title={post.title} content={post.content} />
       ))}
     </div>
   );
