@@ -6,12 +6,13 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   const handleCreatePost = (postData) => {
+    postData.id = Date.now();
     setPosts([...posts, postData]);
   };
 
   return (
     <div>
-      <h1>Fakebook!</h1>
+      <h1>POSTA</h1>
 
       <CreatePostForm onSubmit={handleCreatePost} />
 
