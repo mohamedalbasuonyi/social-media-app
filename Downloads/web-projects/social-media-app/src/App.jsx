@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>POSTA</h1>
 
       <CreatePostForm onSubmit={handleCreatePost} />
